@@ -20,5 +20,10 @@ echo "Your function is". $function;
 
 print_r($_POST);
 
+//conection file
+include 'conection.php';
+
+//extention for dados insert 
+$insert = "INSERT INTO tb_user(null, '$name', '$email', '$password', '$phoneNumbe')"
 
 ?>
