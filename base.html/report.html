@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Memori-Emulator — Create-Call</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-container">
+    <img src="0003aa4f-c1a6-4ab9-b454-149c08e6218d.png" class="orn-left" alt="">
+    <img src="af24541e-9789-4c3e-a6ad-b42382e62e8f.png" class="orn-right" alt="">
+
+    <header class="topbar">
+      <div class="top-title small">Memori-Emulator</div>
+      <div class="page-title">Home-</div>
+      <div id="userBadgeForm" class="user-badge">User</div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <nav>
+          <a href="inicial.html">Home-</a>
+          <a href="formulario.html">Creat-Call</a>
+          <a href="#">Calls-</a>
+          <a href="#">Reserve-</a>
+        </nav>
+      </aside>
+
+      <section class="main-panel card">
+        <div class="panel-inner">
+          <form id="callForm" class="call-form">
+            <label class="label-inline">Type:
+              <input id="callType" type="text" required>
+            </label>
+
+            <label class="label-inline">Category:
+              <input id="callCategory" type="text" required>
+            </label>
+
+            <label class="label-inline">Urgency:
+              <input id="callUrgency" type="text" required>
+            </label>
+
+            <label class="label-inline">Title:
+              <input id="callTitle" type="text" required>
+            </label>
+
+            <label class="label-large">Description:
+              <textarea id="callDescription" rows="6" required></textarea>
+            </label>
+
+            <div class="actions">
+              <button class="btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
