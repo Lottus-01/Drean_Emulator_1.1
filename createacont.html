@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="page-container">
+    <form action="php/cad_usuario.php" method="post">
     <img src="memospriteL.png" class="orn-left" alt="">
     <img src="memospriteR.png" class="orn-right" alt="">
 
@@ -17,29 +18,29 @@
     <main class="card card-large">
       <form id="registerForm" class="form-inner">
         <label class="label">Name:
-          <input id="name" type="text" required>
+          <input id="name" name="name" type="text" required>
         </label>
 
         <div class="row">
           <label class="label">Email:
-            <input id="email" type="email" required>
+            <input id="email" name="email" type="email" required>
           </label>
           <label class="label">Phone-number:
-            <input id="phone" type="tel">
+            <input id="phone" name="phoneNumber" type="tel">
           </label>
         </div>
 
         <div class="row">
           <label class="label">Password:
-            <input id="password" type="password" required>
+            <input id="password" name="password" type="password" required>
           </label>
           <label class="label">Confirm-Password:
-            <input id="confirm" type="password" required>
+            <input id="confirm" name="confirmPasswor" type="password" required>
           </label>
         </div>
 
         <label class="label">Function:
-          <input id="function" type="text">
+          <input id="function" name="function" type="text">
         </label>
 
         <div class="actions">
