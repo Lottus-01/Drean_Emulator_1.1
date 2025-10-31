@@ -4,15 +4,15 @@
 $server = "localhost";
 $user = "root";
 $password = "admin";
-$database = "db_sistema";
+$database = "db_sistema_chamado";
 
 $conection = new mysqli($server, $user, $password, $database);
 
 if($conection == true){
-    echo "Conection sucefully"
+    echo "Conection sucefully";
 }
 else{
-    echo "Conection Error"
+    echo "Conection Error";
 }
 
 ?>

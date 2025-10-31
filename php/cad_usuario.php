@@ -18,12 +18,12 @@ echo "Your confirmation of Password is". $confirmPassword;
 echo "<br>";
 echo "Your function is". $function;
 
-print_r($_POST);
-
 //conection file
 include 'conection.php';
 
 //extention for dados insert 
-$insert = "INSERT INTO tb_user(null, '$name', '$email', '$password', '$phoneNumbe')"
+$insert = "INSERT INTO tb_user(null, '$name', '$email', '$password', '$phoneNumber')"
+
+$query = $conexao->query($insert);
 
 ?>

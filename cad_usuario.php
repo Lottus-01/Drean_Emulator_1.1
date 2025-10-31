@@ -14,6 +14,7 @@ $insert = "INSERT INTO tb_usuario(null, '$nome', '$email ', '$senha','$celular',
 
 $query = $conexao->query($insert);
 
+
 if ($query == true) {
     echo "<script>alert('User craete sucefully'); window.href = '../login.html' </script>";
 }
