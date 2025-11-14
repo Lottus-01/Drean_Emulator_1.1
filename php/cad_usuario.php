@@ -22,7 +22,7 @@ echo "Your function is". $function;
 include 'conection.php';
 
 //extention for dados insert 
-$insert = "INSERT INTO tb_user(null, '$name', '$email', '$password', '$phoneNumber')"
+$insert = "INSERT INTO tb_usuario values(null, '$name', '$email', '$password', '$phoneNumber')"
 
 $query = $conexao->query($insert);
 

@@ -1,16 +1,17 @@
 <?php
-$nome = $_POST['nome'];
+$nome = $_POST['name'];
 $email = $_POST['email'];
-$senha = $_POST['senha'];
-$confirmarSenha = $_POST['confirmarSenha'];
-$celular = $_POST['celular'];
-$setor = $_POST['setor'];
+$senha = $_POST['password'];
+$confirmarSenha = $_POST['confirmPasswor'];
+$celular = $_POST['phoneNumber'];
+$setor = $_POST['function'];
 
 
 include 'conexao.php';
 
 
-$insert = "INSERT INTO tb_usuario(null, '$nome', '$email ', '$senha','$celular','$setor')";
+$insert = "INSERT INTO tb_usuario values(null, '$nome', '$email ', '$senha','$celular','$setor')";
+echo $insert;
 
 $query = $conexao->query($insert);
 
