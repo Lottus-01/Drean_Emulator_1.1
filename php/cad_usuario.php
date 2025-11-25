@@ -6,17 +6,17 @@ $password = $_POST['password'];
 $confirmPassword = $_POST['confirmPasswor'];
 $function = $_POST['function'];
 
-echo "Your name is". $name;
-echo "<br>";
-echo "Your email is". $email;
-echo "<br>";
-echo "Your Phone Number is". $phoneNumber;
-echo "<br>";
-echo "Your password is". $password;
-echo "<br>";
-echo "Your confirmation of Password is". $confirmPassword;
-echo "<br>";
-echo "Your function is". $function;
+// echo "Your name is". $name;
+// echo "<br>";
+// echo "Your email is". $email;
+// echo "<br>";
+// echo "Your Phone Number is". $phoneNumber;
+// echo "<br>";
+// echo "Your password is". $password;
+// echo "<br>";
+// echo "Your confirmation of Password is". $confirmPassword;
+// echo "<br>";
+// echo "Your function is". $function;
 
 //conection file
 include 'conection.php';
@@ -25,5 +25,9 @@ include 'conection.php';
 $insert = "INSERT INTO tb_usuario values(null, '$name', '$email', '$password', '$phoneNumber')"
 
 $query = $conexao->query($insert);
+
+if ($query == true){
+    echo "<script>alert('Usuarios cadastrados com sucesso'); window.location.href = 'firstscrean.html'</script>";
+}
 
 ?>
