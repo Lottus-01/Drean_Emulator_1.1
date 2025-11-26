@@ -6,18 +6,17 @@ $confirmarSenha = $_POST['confirmPasswor'];
 $celular = $_POST['phoneNumber'];
 $setor = $_POST['function'];
 
-
 include 'conexao.php';
 
 
-$insert = "INSERT INTO tb_usuario values(null, '$nome', '$email ', '$senha','$celular','$setor')";
+$insert = "INSERT INTO tb_usuario values(null, '$nome', '$email', '$senha','$celular','$setor')";
 echo $insert;
 
 $query = $conexao->query($insert);
 
 
 if ($query == true) {
-    echo "<script>alert('User craete sucefully'); window.href = '../login.html' </script>";
+    echo "<script>alert('User create sucefully'); window.href = '../login.html' </script>";
 }
 
 
