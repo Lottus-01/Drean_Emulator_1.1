@@ -6,6 +6,6 @@ create table tb_usuario(
   nm_usuario varchar(225),
   nm_email varchar(225),
   nr_senha varchar(100),
-  nr_celular varchar(11),
+  nr_celular varchar(100),
   nm_setor varchar(50)
 );
