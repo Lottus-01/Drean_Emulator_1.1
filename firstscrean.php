@@ -15,6 +15,14 @@
       <div class="top-title small">Memori-Emulator</div>
       <div class="page-title">Home-</div>
       <div id="userBadge" class="user-badge">User</div>
+        <?php
+        session_start();
+        if (isset($_SESSION['id_usuario'])){
+          echo "Olá, ".$_SESSION['nm_usuario'];
+        } else {
+          echo "<script> alert ('Você Não esta logado') history.back(); </script>";
+        }
+         ?>
     </header>
 
     <div class="layout">
