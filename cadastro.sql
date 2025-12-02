@@ -9,3 +9,4 @@ create table tb_usuario(
   nr_celular varchar(100),
   nm_setor varchar(50)
 );
+

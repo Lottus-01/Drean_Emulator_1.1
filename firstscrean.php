@@ -8,13 +8,13 @@
 </head>
 <body>
   <div class="page-container">
-    <img src="0003aa4f-c1a6-4ab9-b454-149c08e6218d.png" class="orn-left" alt="">
-    <img src="af24541e-9789-4c3e-a6ad-b42382e62e8f.png" class="orn-right" alt="">
+    <img src="memospriteL.png" class="orn-left" alt="">
+    <img src="memospriteR.png" class="orn-right" alt="">
 
     <header class="topbar">
       <div class="top-title small">Memori-Emulator</div>
       <div class="page-title">Home-</div>
-      <div id="userBadge" class="user-badge">User</div>
+      
         <?php
         session_start();
         if (isset($_SESSION['id_usuario'])){
@@ -28,10 +28,10 @@
     <div class="layout">
       <aside class="sidebar">
         <nav>
-          <a href="inicial.html">Home-</a>
-          <a href="formulario.html">Creat-Call</a>
+          <a href="report.php">Creat-Call</a>
           <a href="#">Calls-</a>
           <a href="#">Reserve-</a>
+          <a href="login.html">Exit-</a>
         </nav>
       </aside>
 
