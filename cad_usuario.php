@@ -16,7 +16,7 @@ $query = $conexao->query($insert);
 
 
 if ($query == true) {
-    echo "<script>alert('User create sucefully'); window.href = '../login.html' </script>";
+    echo "<script> alert('User created successfully'); window.location.href = 'login.html'; </script>";
 }
 
 
