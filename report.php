@@ -9,8 +9,8 @@
 
 <body>
   <div class="page-container">
-    <img src="memospriteL.png" class="orn-left" alt="">
-    <img src="memospriteR.png" class="orn-right" alt="">
+    <img src="image/memospriteL.png" class="orn-left" alt="">
+    <img src="image/memospriteR.png" class="orn-right" alt="">
 
     <header class="topbar">
       <div class="top-title small">Memori-Emulator</div>
@@ -79,14 +79,17 @@
             </select>
 
             <!-- TITLE -->
-            <label class="label-inline">Title:
-              <input id="callTitle" name="callTitle" type="text" required>
+            <label class="label label-inline" for="callTitle">
+                Title:
+                <input id="callTitle" name="title" type="text" required>
             </label>
 
             <!-- DESCRIPTION -->
-            <label class="label-large">Description:
-              <textarea id="callDescription" name="callDescription" rows="6" required></textarea>
+            <label class="label label-large" for="callDescription">
+                Description:
+                <textarea id="callDescription" name="description" rows="6" required></textarea>
             </label>
+
 
             <div class="actions">
               <button class="btn" type="submit">Send</button>

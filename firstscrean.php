@@ -29,7 +29,7 @@
       <aside class="sidebar">
         <nav>
           <a href="report.php">Creat-Call</a>
-          <a href="#">Calls-</a>
+          <a href="list_calls.php">Calls-</a>
           <a href="#">Reserve-</a>
           <a href="login.html">Exit-</a>
         </nav>
